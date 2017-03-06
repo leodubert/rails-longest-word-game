@@ -1,0 +1,18 @@
+<%= @grid %>
+
+<%= start_time = Time.now %>
+
+<form action="/score">
+  <label for="question">What's your guess ?</label>
+  <input type="text" id="question" name="attempt" placeholder="Do your best">
+  <input type="submit" value="Try it !">
+  <input type="hidden" name="grid" value="<%=@grid%>" >
+</form>
+
+
+<%= end_time = Time.now %>
+
+
+
+
+
